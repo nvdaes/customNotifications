@@ -54,7 +54,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		wx.CallAfter(self.onSettings, None)
 
 
-class EnhancedNotification(Notification):	
+class EnhancedNotification(Notification):
 
 	def event_alert(self):
 		if not config.conf["presentation"]["reportHelpBalloons"]:
