@@ -71,4 +71,3 @@ class AddonSettingsPanel(SettingsPanel):
 		config.conf["customNotifications"]["endLimit"] = self.endLimitEdit.GetValue()
 		config.conf["customNotifications"]["speech"] = self.outputModesList.IsChecked(0)
 		config.conf["customNotifications"]["braille"] = self.outputModesList.IsChecked(1)
-
