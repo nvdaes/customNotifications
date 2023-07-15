@@ -4,6 +4,7 @@
 # Released under GPL 2
 
 import wx
+from typing import Callable
 
 import addonHandler
 import globalPluginHandler
@@ -20,6 +21,8 @@ from typing import Dict
 from .gui import ADDON_SUMMARY, AddonSettingsPanel
 
 addonHandler.initTranslation()
+
+_: Callable[[str], str]
 
 confspec: Dict[str, str] = {
 	"truncateNotifications": "boolean(default=True)",

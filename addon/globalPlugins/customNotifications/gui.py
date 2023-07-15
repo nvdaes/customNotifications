@@ -4,6 +4,8 @@
 # Released under GPL 2
 
 import wx
+from typing import Callable
+
 import config
 import gui
 from gui import SettingsPanel, guiHelper
@@ -12,6 +14,8 @@ import addonHandler
 addonHandler.initTranslation()
 
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
+
+_: Callable[[str], str]
 
 
 class AddonSettingsPanel(SettingsPanel):
