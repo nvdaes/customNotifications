@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'customNotifications' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'customNotifications' '0.0.0'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2023-07-15 20:49+0300\n"
+"PO-Revision-Date: 2023-07-15 21:32+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#. Translators: message presented in input mode.
+#: addon\globalPlugins\customNotifications\__init__.py:53
+#, python-format
+msgid "Shows the %s settings."
+msgstr "Показує налаштування %s."
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\customNotifications\gui.py:28
+msgid "&Truncate notifications"
+msgstr "&Скоротити сповіщення"
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\customNotifications\gui.py:31
+msgid "Type the characters to be used as the end &limit of notifications"
+msgstr ""
+"Введіть символи, які будуть використовуватися як &кінцева межа сповіщень"
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\customNotifications\gui.py:35
+msgid "Sele&ct output modes for notifications"
+msgstr "&Оберіть режими виводу сповіщень"
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\customNotifications\gui.py:38
+msgid "Speech"
+msgstr "Мовлення"
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\customNotifications\gui.py:40
+msgid "Braille"
+msgstr "Брайль"
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\customNotifications\gui.py:53
+msgid "Type the text to show a test &notification"
+msgstr "Введіть текст, який буде показано в &тестовому сповіщенні"
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\customNotifications\gui.py:58
+msgid "&Show test notification"
+msgstr "&Показати тестове сповіщення"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "Custom Notifications"
+msgstr "Персоналізовані сповіщення"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"Choose how NVDA should read toast notifications.\n"
+"You can read just the application which sent a toast, and choose if "
+"notifications are spoken, displayed in braille or both.\n"
+"This may  improve your experience with toast notifications and help you to "
+"keep your privacy."
+msgstr ""
+"Виберіть, як NVDA має читати сповіщення.\n"
+"Ви можете налаштувати NVDDA на читання лише назви програми, від якої "
+"надійшло сповіщення, а також вибрати, чи будуть сповіщення озвучені, "
+"показані шрифтом Брайля або і те, і інше.\n"
+"Це може покращити ваш досвід роботи зі сповіщеннями й допоможе вам "
+"зберегти конфіденційність."
