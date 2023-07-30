@@ -15,4 +15,4 @@ Go to NVDA's menu, Preferences submenu, Settings, and select the Custom Notifica
 * An edit box to type a text to send a test notification, to get an idea of how NVDA will present toasts.
 * If the previous edit box contains text, a button to send a notification, so you can test if your selected  settings work fine for you.
 
-You can assign a gesture to open the add-on settings panel from NVDA's menu, Preferences submenu, Input gestures dialog, Configuration category.
+You can assign a gesture to open the add-on settings panel, and to toggle various add-on settings, from NVDA's menu, Preferences submenu, Input gestures dialog, Configuration category.

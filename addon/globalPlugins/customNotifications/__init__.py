@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+
 # customNotifications: a global plugin to customize toast notifications
 # Copyright (C) 2023 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
@@ -8,14 +9,17 @@ from typing import Callable
 
 import addonHandler
 import globalPluginHandler
+import globalVars
 import config
 import controlTypes
+import ui
 import speech
 import braille
 from globalCommands import SCRCAT_CONFIG
 from NVDAObjects.behaviors import Notification
 from scriptHandler import script
-from gui import NVDASettingsDialog, mainFrame
+from gui import mainFrame
+from gui.settingsDialogs import NVDASettingsDialog
 from typing import Dict
 
 from .gui import ADDON_SUMMARY, AddonSettingsPanel
@@ -32,6 +36,13 @@ confspec: Dict[str, str] = {
 }
 
 
+def disableInSecureMode(decoratedCls):
+	if globalVars.appArgs.secure:
+		return globalPluginHandler.GlobalPlugin
+	return decoratedCls
+
+
+@disableInSecureMode
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self):
@@ -46,7 +57,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		Notification.event_alert = self.oldEventAlert
 
 	def onSettings(self, evt):
-		mainFrame._popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
+		mainFrame.popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
 
 	@script(
 		# Translators: message presented in input mode.
@@ -55,6 +66,54 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_settings(self, gesture):
 		wx.CallAfter(self.onSettings, None)
+
+	@script(
+		# Translators: message presented in input mode.
+		description=_("Toggles Truncate notifications option of %s.") % ADDON_SUMMARY,
+		category=SCRCAT_CONFIG,
+	)
+	def script_toggleTruncate(self, gesture):
+		truncateNotifications = config.conf["customNotifications"]["truncateNotifications"]
+		if truncateNotifications:
+			config.conf["customNotifications"]["truncateNotifications"] = False
+			# Translators: message presented when truncate notifications are disabled.
+			ui.message(_("Truncate notifications disabled"))
+		else:
+			config.conf["customNotifications"]["truncateNotifications"] = True
+			# Translators: message presented when truncate notifications are enabled.
+			ui.message(_("Truncate notifications enabled"))
+
+	@script(
+		# Translators: message presented in input mode.
+		description=_("Toggles speech option of %s.") % ADDON_SUMMARY,
+		category=SCRCAT_CONFIG,
+	)
+	def script_toggleSpeech(self, gesture):
+		speech = config.conf["customNotifications"]["speech"]
+		if speech:
+			config.conf["customNotifications"]["speech"] = False
+			# Translators: message presented when customNotifications speech is disabled.
+			ui.message(_("Speech disabled for %s") % ADDON_SUMMARY)
+		else:
+			config.conf["customNotifications"]["speech"] = True
+			# Translators: message presented when customNotifications speech is enabled.
+			ui.message(_("Speech enabled for %s") % ADDON_SUMMARY)
+
+	@script(
+		# Translators: message presented in input mode.
+		description=_("Toggles braille option of %s.") % ADDON_SUMMARY,
+		category=SCRCAT_CONFIG,
+	)
+	def script_toggleBraille(self, gesture):
+		braille = config.conf["customNotifications"]["braille"]
+		if braille:
+			config.conf["customNotifications"]["braille"] = False
+			# Translators: message presented when customNotifications braille is disabled.
+			ui.message(_("Braille disabled for %s") % ADDON_SUMMARY)
+		else:
+			config.conf["customNotifications"]["braille"] = True
+			# Translators: message presented when customNotifications braille is enabled.
+			ui.message(_("Braille enabled for %s") % ADDON_SUMMARY)
 
 
 class EnhancedNotification(Notification):
