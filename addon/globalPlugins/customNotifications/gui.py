@@ -8,7 +8,8 @@ from typing import Callable
 
 import config
 import gui
-from gui import SettingsPanel, guiHelper
+from gui import guiHelper
+from gui.settingsDialogs import SettingsPanel
 import addonHandler
 
 addonHandler.initTranslation()
