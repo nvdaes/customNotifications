@@ -10,6 +10,7 @@ You can choose to read the whole notification or just the application which send
 Go to NVDA's menu, Preferences submenu, Settings, and select the Custom Notifications category. There you'll find the following controls:
 
 * A checkbox to choose if notifications should be truncated, checked by default.
+* An edit box to set the start limit of notifications, empty by default.
 * An edit box to set the end limit of notifications, ", " (comma space) by default.
 * A list of checkboxes to select if notifications should be spoken and displayed in braille, both checked by default.
 * An edit box to type a text to send a test notification, to get an idea of how NVDA will present toasts.
