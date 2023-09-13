@@ -30,6 +30,7 @@ _: Callable[[str], str]
 
 confspec: Dict[str, str] = {
 	"truncateNotifications": "boolean(default=True)",
+	"startLimit": 'string(default="")',
 	"endLimit": 'string(default=", ")',
 	"speech": "boolean(default=True)",
 	"braille": "boolean(default=True)",
@@ -122,9 +123,13 @@ class EnhancedNotification(Notification):
 		if not config.conf["presentation"]["reportHelpBalloons"]:
 			return
 		truncateNotifications = config.conf["customNotifications"]["truncateNotifications"]
+		startLimit = config.conf["customNotifications"]["startLimit"]
 		endLimit = config.conf["customNotifications"]["endLimit"]
-		if truncateNotifications and endLimit:
-			self.name = self.name.split(endLimit)[0]
+		if truncateNotifications:
+			if startLimit:
+				self.name = self.name.split(startLimit, 1)[1]
+			if endLimit:
+				self.name = self.name.split(endLimit)[0]
 		if config.conf["customNotifications"]["speech"]:
 			speech.speakObject(self, reason=controlTypes.OutputReason.FOCUS)
 		# Ideally, we wouldn't use getPropertiesBraille directly.

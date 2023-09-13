@@ -8,7 +8,8 @@ from typing import Callable
 
 import config
 import gui
-from gui import SettingsPanel, guiHelper
+from gui import guiHelper
+from gui.settingsDialogs import SettingsPanel
 import addonHandler
 
 addonHandler.initTranslation()
@@ -27,6 +28,10 @@ class AddonSettingsPanel(SettingsPanel):
 		# Translators: label of a dialog.
 		self.truncateNotificationsCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Truncate notifications")))
 		self.truncateNotificationsCheckBox.SetValue(config.conf["customNotifications"]["truncateNotifications"])
+		# Translators: label of a dialog.
+		startLimitLabel = _("Type the characters to be used as the &start limit of notifications")
+		self.startLimitEdit = sHelper.addLabeledControl(startLimitLabel, wx.TextCtrl)
+		self.startLimitEdit.SetValue(config.conf["customNotifications"]["startLimit"])
 		# Translators: label of a dialog.
 		endLimitLabel = _("Type the characters to be used as the end &limit of notifications")
 		self.endLimitEdit = sHelper.addLabeledControl(endLimitLabel, wx.TextCtrl)
@@ -68,6 +73,7 @@ class AddonSettingsPanel(SettingsPanel):
 
 	def onSave(self):
 		config.conf["customNotifications"]["truncateNotifications"] = self.truncateNotificationsCheckBox.GetValue()
+		config.conf["customNotifications"]["startLimit"] = self.startLimitEdit.GetValue()
 		config.conf["customNotifications"]["endLimit"] = self.endLimitEdit.GetValue()
 		config.conf["customNotifications"]["speech"] = self.outputModesList.IsChecked(0)
 		config.conf["customNotifications"]["braille"] = self.outputModesList.IsChecked(1)
