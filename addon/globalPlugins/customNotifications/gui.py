@@ -28,7 +28,7 @@ class AddonSettingsPanel(SettingsPanel):
 		# Translators: label of a dialog.
 		self.truncateNotificationsCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Truncate notifications")))
 		self.truncateNotificationsCheckBox.SetValue(config.conf["customNotifications"]["truncateNotifications"])
-				# Translators: label of a dialog.
+		# Translators: label of a dialog.
 		startLimitLabel = _("Type the characters to be used as the &start limit of notifications")
 		self.startLimitEdit = sHelper.addLabeledControl(startLimitLabel, wx.TextCtrl)
 		self.startLimitEdit.SetValue(config.conf["customNotifications"]["startLimit"])
