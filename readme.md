@@ -17,3 +17,7 @@ Go to NVDA's menu, Preferences submenu, Settings, and select the Custom Notifica
 * If the previous edit box contains text, a button to send a notification, so you can test if your selected  settings work fine for you.
 
 You can assign a gesture to open the add-on settings panel, and to toggle various add-on settings, from NVDA's menu, Preferences submenu, Input gestures dialog, Configuration category.
+
+## Changes for 2.0.0 ##
+
+* In the add-on settings panel, added an edit box to set the start limit of notifications.
