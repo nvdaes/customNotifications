@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'customNotifications' '0.0.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-07-15 20:49+0300\n"
-"PO-Revision-Date: 2023-07-15 21:32+0300\n"
+"POT-Creation-Date: 2023-09-18 18:03+0300\n"
+"PO-Revision-Date: 2023-09-18 18:08+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uk_UA\n"
@@ -18,44 +18,102 @@ msgstr ""
 "X-Generator: Poedit 3.3.2\n"
 
 #. Translators: message presented in input mode.
-#: addon\globalPlugins\customNotifications\__init__.py:53
+#: addon\globalPlugins\customNotifications\__init__.py:65
 #, python-format
 msgid "Shows the %s settings."
 msgstr "Показує налаштування %s."
 
+#. Translators: message presented in input mode.
+#: addon\globalPlugins\customNotifications\__init__.py:73
+#, python-format
+msgid "Toggles Truncate notifications option of %s."
+msgstr "Перемикає параметри скорочення сповіщень для %s."
+
+#. Translators: message presented when truncate notifications are disabled.
+#: addon\globalPlugins\customNotifications\__init__.py:81
+msgid "Truncate notifications disabled"
+msgstr "Скорочення сповіщень вимкнено"
+
+#. Translators: message presented when truncate notifications are enabled.
+#: addon\globalPlugins\customNotifications\__init__.py:85
+msgid "Truncate notifications enabled"
+msgstr "Скорочення сповіщень увімкнено"
+
+#. Translators: message presented in input mode.
+#: addon\globalPlugins\customNotifications\__init__.py:89
+#, python-format
+msgid "Toggles speech option of %s."
+msgstr "Перемикає параметр мовлення для %s."
+
+#. Translators: message presented when customNotifications speech is disabled.
+#: addon\globalPlugins\customNotifications\__init__.py:97
+#, python-format
+msgid "Speech disabled for %s"
+msgstr "Мовлення вимкнено для %s"
+
+#. Translators: message presented when customNotifications speech is enabled.
+#: addon\globalPlugins\customNotifications\__init__.py:101
+#, python-format
+msgid "Speech enabled for %s"
+msgstr "Мовлення увімкнено для %s"
+
+#. Translators: message presented in input mode.
+#: addon\globalPlugins\customNotifications\__init__.py:105
+#, python-format
+msgid "Toggles braille option of %s."
+msgstr "Перемикає параметр  брайля для %s."
+
+#. Translators: message presented when customNotifications braille is disabled.
+#: addon\globalPlugins\customNotifications\__init__.py:113
+#, python-format
+msgid "Braille disabled for %s"
+msgstr "Брайль вимкнено для %s"
+
+#. Translators: message presented when customNotifications braille is enabled.
+#: addon\globalPlugins\customNotifications\__init__.py:117
+#, python-format
+msgid "Braille enabled for %s"
+msgstr "Брайль увімкнено для %s"
+
 #. Translators: label of a dialog.
-#: addon\globalPlugins\customNotifications\gui.py:28
+#: addon\globalPlugins\customNotifications\gui.py:29
 msgid "&Truncate notifications"
 msgstr "&Скоротити сповіщення"
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\customNotifications\gui.py:31
+#: addon\globalPlugins\customNotifications\gui.py:32
+msgid "Type the characters to be used as the &start limit of notifications"
+msgstr ""
+"Введіть символи, які будуть використовуватися як &початкова межа сповіщень"
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\customNotifications\gui.py:36
 msgid "Type the characters to be used as the end &limit of notifications"
 msgstr ""
 "Введіть символи, які будуть використовуватися як &кінцева межа сповіщень"
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\customNotifications\gui.py:35
+#: addon\globalPlugins\customNotifications\gui.py:40
 msgid "Sele&ct output modes for notifications"
 msgstr "&Оберіть режими виводу сповіщень"
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\customNotifications\gui.py:38
+#: addon\globalPlugins\customNotifications\gui.py:43
 msgid "Speech"
 msgstr "Мовлення"
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\customNotifications\gui.py:40
+#: addon\globalPlugins\customNotifications\gui.py:45
 msgid "Braille"
 msgstr "Брайль"
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\customNotifications\gui.py:53
+#: addon\globalPlugins\customNotifications\gui.py:58
 msgid "Type the text to show a test &notification"
 msgstr "Введіть текст, який буде показано в &тестовому сповіщенні"
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\customNotifications\gui.py:58
+#: addon\globalPlugins\customNotifications\gui.py:63
 msgid "&Show test notification"
 msgstr "&Показати тестове сповіщення"
 
@@ -80,5 +138,5 @@ msgstr ""
 "Ви можете налаштувати NVDDA на читання лише назви програми, від якої "
 "надійшло сповіщення, а також вибрати, чи будуть сповіщення озвучені, "
 "показані шрифтом Брайля або і те, і інше.\n"
-"Це може покращити ваш досвід роботи зі сповіщеннями й допоможе вам "
-"зберегти конфіденційність."
+"Це може покращити ваш досвід роботи зі сповіщеннями й допоможе вам зберегти "
+"конфіденційність."
