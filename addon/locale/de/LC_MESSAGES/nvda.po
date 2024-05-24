@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the customNotifications package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: customNotifications 4.0.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2024-04-27 14:50+0000\n"
+"PO-Revision-Date: 2024-05-18 06:27+0200\n"
+"Last-Translator: René Linke <rene.linke@hamburg.de>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. Translators: message presented in input mode.
+#, python-format
+msgid "Shows the %s settings."
+msgstr "Zeigt die %s-Einstellungen an."
+
+#. Translators: message presented in input mode.
+#, python-format
+msgid "Toggles Truncate notifications option of %s."
+msgstr "Schaltet die Option \"Benachrichtigungen abschneiden\" von %s um."
+
+#. Translators: message presented when truncate notifications are disabled.
+msgid "Truncate notifications disabled"
+msgstr "Benachrichtigungen abschneiden ausgeschaltet"
+
+#. Translators: message presented when truncate notifications are enabled.
+msgid "Truncate notifications enabled"
+msgstr "Benachrichtigungen abschneiden eingeschaltet"
+
+#. Translators: message presented in input mode.
+#, python-format
+msgid "Toggles speech option of %s."
+msgstr "Schaltet die Option für die Sprachausgabe von %s um."
+
+#. Translators: message presented when customNotifications speech is disabled.
+#, python-format
+msgid "Speech disabled for %s"
+msgstr "Sprachausgabe für %s ausgeschaltet"
+
+#. Translators: message presented when customNotifications speech is enabled.
+#, python-format
+msgid "Speech enabled for %s"
+msgstr "Sprachausgabe für %s eingeschaltet"
+
+#. Translators: message presented in input mode.
+#, python-format
+msgid "Toggles braille option of %s."
+msgstr "Schaltet die Option für die Brailleausgabe von %s um."
+
+#. Translators: message presented when customNotifications braille is disabled.
+#, python-format
+msgid "Braille disabled for %s"
+msgstr "Brailleausgabe für %s ausgeschaltet"
+
+#. Translators: message presented when customNotifications braille is enabled.
+#, python-format
+msgid "Braille enabled for %s"
+msgstr "Brailleausgabe für %s eingeschaltet"
+
+#. Translators: label of a dialog.
+msgid "&Truncate notifications"
+msgstr "Benachrich&tigungen abschneiden"
+
+#. Translators: label of a dialog.
+msgid "Type the characters to be used as the &start limit of notifications"
+msgstr ""
+"Geben Sie die Zeichen ein, die als &Start der Benachrichtigungen verwendet "
+"werden sollen"
+
+#. Translators: label of a dialog.
+msgid "Type the characters to be used as the end &limit of notifications"
+msgstr ""
+"Geben Sie die Zeichen ein, die a&ls Ende der Benachrichtigungen verwendet "
+"werden sollen"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct output modes for notifications"
+msgstr "Auswahl der Ausgabemodi für Bena&chrichtigungen"
+
+#. Translators: label of a dialog.
+msgid "Speech"
+msgstr "Sprachausgabe"
+
+#. Translators: label of a dialog.
+msgid "Braille"
+msgstr "Brailleausgabe"
+
+#. Translators: label of a dialog.
+msgid "Type the text to show a test &notification"
+msgstr "Geben Sie Text ein, um eine Test-&Benachrichtigung anzuzeigen"
+
+#. Translators: label of a dialog.
+msgid "&Show test notification"
+msgstr "Te&st-Benachrichtigung anzeigen"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+msgid "Custom Notifications"
+msgstr "Benutzerdefinierte Benachrichtigungen"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Choose how NVDA should read toast notifications.\n"
+"You can read just the application which sent a toast, and choose if "
+"notifications are spoken, displayed in braille or both.\n"
+"This may  improve your experience with toast notifications and help you to "
+"keep your privacy."
+msgstr ""
+"Wählen Sie aus, wie NVDA die Toast-Benachrichtigungen anzeigen soll.\n"
+"Sie können nur die Anwendung hören, die eine Toast-Benachrichtigung "
+"gesendet hat und wählen Sie aus, ob die Benachrichtigungen über die "
+"Sprachausgabe oder auf der Braillezeile ausgegeben oder beides angezeigt "
+"werden soll.\n"
+"Dies kann die Erfahrung mit Toast-Benachrichtigungen verbessern und "
+"helfen, die Privatsphäre zu wahren."
