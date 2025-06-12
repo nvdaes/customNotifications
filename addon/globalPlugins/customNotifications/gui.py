@@ -1,10 +1,8 @@
-# -*- coding: UTF-8 -*-
 # customNotifications: a global plugin to customize toast notifications
-# Copyright (C) 2023 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2023-2025 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 
 import wx
-from typing import Callable
 
 import config
 import gui
@@ -16,8 +14,6 @@ addonHandler.initTranslation()
 
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 
-_: Callable[[str], str]
-
 
 class AddonSettingsPanel(SettingsPanel):
 	title = ADDON_SUMMARY
@@ -26,10 +22,10 @@ class AddonSettingsPanel(SettingsPanel):
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Translators: label of a dialog.
 		self.truncateNotificationsCheckBox = sHelper.addItem(
-			wx.CheckBox(self, label=_("&Truncate notifications"))
+			wx.CheckBox(self, label=_("&Truncate notifications")),
 		)
 		self.truncateNotificationsCheckBox.SetValue(
-			config.conf["customNotifications"]["truncateNotifications"]
+			config.conf["customNotifications"]["truncateNotifications"],
 		)
 		# Translators: label of a dialog.
 		startLimitLabel = _("Type the characters to be used as the &start limit of notifications")
