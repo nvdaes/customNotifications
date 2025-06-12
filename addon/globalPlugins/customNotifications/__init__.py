@@ -45,7 +45,6 @@ def disableInSecureMode(decoratedCls):
 
 @disableInSecureMode
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-
 	def __init__(self):
 		super().__init__()
 		config.conf.spec["customNotifications"] = confspec
@@ -118,7 +117,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 
 class EnhancedNotification(Notification):
-
 	def event_alert(self):
 		if not config.conf["presentation"]["reportHelpBalloons"]:
 			return

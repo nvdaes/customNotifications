@@ -20,14 +20,17 @@ _: Callable[[str], str]
 
 
 class AddonSettingsPanel(SettingsPanel):
-
 	title = ADDON_SUMMARY
 
 	def makeSettings(self, settingsSizer):
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Translators: label of a dialog.
-		self.truncateNotificationsCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Truncate notifications")))
-		self.truncateNotificationsCheckBox.SetValue(config.conf["customNotifications"]["truncateNotifications"])
+		self.truncateNotificationsCheckBox = sHelper.addItem(
+			wx.CheckBox(self, label=_("&Truncate notifications"))
+		)
+		self.truncateNotificationsCheckBox.SetValue(
+			config.conf["customNotifications"]["truncateNotifications"]
+		)
 		# Translators: label of a dialog.
 		startLimitLabel = _("Type the characters to be used as the &start limit of notifications")
 		self.startLimitEdit = sHelper.addLabeledControl(startLimitLabel, wx.TextCtrl)
@@ -45,7 +48,9 @@ class AddonSettingsPanel(SettingsPanel):
 			_("Braille"),
 		]
 		self.outputModesList = sHelper.addLabeledControl(
-			outputModesLabel, gui.nvdaControls.CustomCheckListBox, choices=outputModesChoices
+			outputModesLabel,
+			gui.nvdaControls.CustomCheckListBox,
+			choices=outputModesChoices,
 		)
 		checkedItems = []
 		if config.conf["customNotifications"]["speech"]:
@@ -72,7 +77,9 @@ class AddonSettingsPanel(SettingsPanel):
 		notification.Show()
 
 	def onSave(self):
-		config.conf["customNotifications"]["truncateNotifications"] = self.truncateNotificationsCheckBox.GetValue()
+		config.conf["customNotifications"]["truncateNotifications"] = (
+			self.truncateNotificationsCheckBox.GetValue()
+		)
 		config.conf["customNotifications"]["startLimit"] = self.startLimitEdit.GetValue()
 		config.conf["customNotifications"]["endLimit"] = self.endLimitEdit.GetValue()
 		config.conf["customNotifications"]["speech"] = self.outputModesList.IsChecked(0)
