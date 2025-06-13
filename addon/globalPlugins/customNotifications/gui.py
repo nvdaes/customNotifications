@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 # customNotifications: a global plugin to customize toast notifications
 # Copyright (C) 2023-2025 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
