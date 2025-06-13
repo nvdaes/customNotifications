@@ -22,8 +22,8 @@ class AddonSettingsPanel(SettingsPanel):
 
 	def makeSettings(self, settingsSizer):
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
-		# Translators: label of a dialog.
 		self.truncateNotificationsCheckBox = sHelper.addItem(
+			# Translators: label of a dialog.
 			wx.CheckBox(self, label=_("&Truncate notifications")),
 		)
 		self.truncateNotificationsCheckBox.SetValue(
