@@ -27,7 +27,7 @@ addon_info = {
 You can read just the application which sent a toast, and choose if notifications are spoken, displayed in braille or both.
 This may  improve your experience with toast notifications and help you to keep your privacy."""),
 	# version
-	"addon_version": "12.0.0",
+	"addon_version": "13.0.0",
 	# Author(s)
 	"addon_author": "José Fischer <jnunez92@gmail.com>, Noelia Ruiz Martínez <nrm1977@gmail.com>",
 	# URL for the add-on documentation support
