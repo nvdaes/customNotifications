@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+<file id="readme.md" original="https://raw.githubusercontent.com/nvdaes/customNotifications/2fb3881dc58a51aa108dcd7d8d0d3f2b050a8640/readme.md">
+<skeleton>
+# $(ID:8ae8aefa-8618-4731-a4f2-770da977f723)
+*	$(ID:e2972681-d611-41da-8bb0-f972bf2cacca)
+
+$(ID:6d83e83f-37bd-4966-b05b-edf7285b4dca)
+
+$(ID:8e6fb5c1-976c-4f36-a424-91816a527be6)
+
+## $(ID:e872555c-ec0b-4ffd-91e6-50bb15e4c3c7)
+
+$(ID:7ff3bea7-b64a-486b-bf27-8b3a2b37ebcf)
+
+* $(ID:1eeaef60-cd10-429e-8d6d-f57cada73a63)
+* $(ID:da780634-a746-4cc8-bcc9-fab1f97bf252)
+* $(ID:fa71cd86-4df6-4826-a46d-eac93d8884c0)
+* $(ID:ecbb1c67-447c-4948-a18b-f03d1e515fd9)
+* $(ID:b21b6617-97f4-42fc-b591-44088ed41080)
+* $(ID:d4d03f1a-928a-427c-b785-b12a29433db7)
+
+$(ID:789732e8-e4f2-48f2-a76b-a26e911ce133)
+
+## $(ID:f4b8b486-6204-4bc1-aeb7-69c8e6dea8fd)
+
+* $(ID:fc56f97c-0790-4290-b457-7aecc81b7e4a)
+
+</skeleton>
+<unit id="8ae8aefa-8618-4731-a4f2-770da977f723">
+<notes>
+<note appliesTo="source">line: 2</note>
+<note appliesTo="source">prefix: # </note>
+</notes>
+<segment>
+<source>Custom Notifications #</source>
+</segment>
+</unit>
+<unit id="e2972681-d611-41da-8bb0-f972bf2cacca">
+<notes>
+<note appliesTo="source">line: 3</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Authors: José Fischer, Noelia Ruiz Martínez</source>
+</segment>
+</unit>
+<unit id="6d83e83f-37bd-4966-b05b-edf7285b4dca">
+<notes>
+<note appliesTo="source">line: 5</note>
+</notes>
+<segment>
+<source>This add-on is used to customize toast notifications.</source>
+</segment>
+</unit>
+<unit id="8e6fb5c1-976c-4f36-a424-91816a527be6">
+<notes>
+<note appliesTo="source">line: 7</note>
+</notes>
+<segment>
+<source>You can choose to read the whole notification or just the application which sends it, and if notifications will be spoken, displayed in braille or both.</source>
+</segment>
+</unit>
+<unit id="e872555c-ec0b-4ffd-91e6-50bb15e4c3c7">
+<notes>
+<note appliesTo="source">line: 9</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Settings ##</source>
+</segment>
+</unit>
+<unit id="7ff3bea7-b64a-486b-bf27-8b3a2b37ebcf">
+<notes>
+<note appliesTo="source">line: 11</note>
+</notes>
+<segment>
+<source>Go to NVDA's menu, Preferences submenu, Settings, and select the Custom Notifications category. There you'll find the following controls:</source>
+</segment>
+</unit>
+<unit id="1eeaef60-cd10-429e-8d6d-f57cada73a63">
+<notes>
+<note appliesTo="source">line: 13</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>A checkbox to choose if notifications should be truncated, checked by default.</source>
+</segment>
+</unit>
+<unit id="da780634-a746-4cc8-bcc9-fab1f97bf252">
+<notes>
+<note appliesTo="source">line: 14</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>An edit box to set the start limit of notifications, empty by default.</source>
+</segment>
+</unit>
+<unit id="fa71cd86-4df6-4826-a46d-eac93d8884c0">
+<notes>
+<note appliesTo="source">line: 15</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>An edit box to set the end limit of notifications, ", " (comma space) by default.</source>
+</segment>
+</unit>
+<unit id="ecbb1c67-447c-4948-a18b-f03d1e515fd9">
+<notes>
+<note appliesTo="source">line: 16</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>A list of checkboxes to select if notifications should be spoken and displayed in braille, both checked by default.</source>
+</segment>
+</unit>
+<unit id="b21b6617-97f4-42fc-b591-44088ed41080">
+<notes>
+<note appliesTo="source">line: 17</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>An edit box to type a text to send a test notification, to get an idea of how NVDA will present toasts.</source>
+</segment>
+</unit>
+<unit id="d4d03f1a-928a-427c-b785-b12a29433db7">
+<notes>
+<note appliesTo="source">line: 18</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>If the previous edit box contains text, a button to send a notification, so you can test if your selected  settings work fine for you.</source>
+</segment>
+</unit>
+<unit id="789732e8-e4f2-48f2-a76b-a26e911ce133">
+<notes>
+<note appliesTo="source">line: 20</note>
+</notes>
+<segment>
+<source>You can assign a gesture to open the add-on settings panel, and to toggle various add-on settings, from NVDA's menu, Preferences submenu, Input gestures dialog, Configuration category.</source>
+</segment>
+</unit>
+<unit id="f4b8b486-6204-4bc1-aeb7-69c8e6dea8fd">
+<notes>
+<note appliesTo="source">line: 22</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 2.0.0 ##</source>
+</segment>
+</unit>
+<unit id="fc56f97c-0790-4290-b457-7aecc81b7e4a">
+<notes>
+<note appliesTo="source">line: 24</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>In the add-on settings panel, added an edit box to set the start limit of notifications.</source>
+</segment>
+</unit>
+</file>
+</xliff>
