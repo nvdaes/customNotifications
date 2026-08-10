@@ -22,7 +22,7 @@ addon_info = AddonInfo(
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	addon_description=_('Choose how NVDA should read toast notifications.\nYou can read just the application which sent a toast, and choose if notifications are spoken, displayed in braille or both.\nThis may  improve your experience with toast notifications and help you to keep your privacy.'),
 	# version
-	addon_version="14.0.0",
+	addon_version="14.1.0",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
 	addon_changelog=_("* Updates to translations."),
