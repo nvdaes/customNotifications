@@ -5,122 +5,122 @@ msgstr ""
 "POT-Creation-Date: 2026-09-01 01:27+0000\n"
 "PO-Revision-Date: 2026-09-01 01:29\n"
 "Last-Translator: \n"
-"Language-Team: German\n"
-"Language: de_DE\n"
+"Language-Team: Kurmanji (Kurdish)\n"
+"Language: kmr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: nvdaaddons\n"
 "X-Crowdin-Project-ID: 780748\n"
-"X-Crowdin-Language: de\n"
+"X-Crowdin-Language: kmr\n"
 "X-Crowdin-File: customNotifications.pot\n"
 "X-Crowdin-File-ID: 244\n"
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\customNotifications\gui.py:27
 msgid "&Truncate notifications"
-msgstr "Benachrich&tigungen abschneiden"
+msgstr "&Agahdariyan Bibire"
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\customNotifications\gui.py:33
 msgid "Type the characters to be used as the &start limit of notifications"
-msgstr "Geben Sie die Zeichen ein, die als &Start der Benachrichtigungen verwendet werden sollen"
+msgstr "Tîpên ku wekî sînorê destpêkirina agahdariyan werin bikar anîn binivîsin"
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\customNotifications\gui.py:37
 msgid "Type the characters to be used as the end &limit of notifications"
-msgstr "Geben Sie die Zeichen ein, die a&ls Ende der Benachrichtigungen verwendet werden sollen"
+msgstr "Tîpên ku wekî dawiya &sînorê agahdariyan werin bikar anîn binivîse"
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\customNotifications\gui.py:41
 msgid "Sele&ct output modes for notifications"
-msgstr "Auswahl der Ausgabemodi für Bena&chrichtigungen"
+msgstr "Modên derketinê ji bo agahdariyan hilbijêre"
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\customNotifications\gui.py:44
 msgid "Speech"
-msgstr "Sprachausgabe"
+msgstr "Gotar"
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\customNotifications\gui.py:46
 msgid "Braille"
-msgstr "Brailleausgabe"
+msgstr ""
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\customNotifications\gui.py:61
 msgid "Type the text to show a test &notification"
-msgstr "Geben Sie Text ein, um eine Test-&Benachrichtigung anzuzeigen"
+msgstr "Nivîsê binivîse da ku ceribandinek nîşan bide"
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\customNotifications\gui.py:66
 msgid "&Show test notification"
-msgstr "Te&st-Benachrichtigung anzeigen"
+msgstr "Agahdariya &Testê nîşan bide"
 
 #. Translators: message presented in input mode.
 #: addon\globalPlugins\customNotifications\__init__.py:64
 #, python-format
 msgid "Shows the %s settings."
-msgstr "Zeigt die %s-Einstellungen an."
+msgstr "Mîhengên %s nîşan dide."
 
 #. Translators: message presented in input mode.
 #: addon\globalPlugins\customNotifications\__init__.py:72
 #, python-format
 msgid "Toggles Truncate notifications option of %s."
-msgstr "Schaltet die Option \"Benachrichtigungen abschneiden\" von %s um."
+msgstr "Vebijarka kurtkirina agahdariyan a %s vediguhezîne/diguhezîne."
 
 #. Translators: message presented when truncate notifications are disabled.
 #: addon\globalPlugins\customNotifications\__init__.py:80
 msgid "Truncate notifications disabled"
-msgstr "Benachrichtigungen abschneiden ausgeschaltet"
+msgstr "Agahiyên kurtkirî neçalak in"
 
 #. Translators: message presented when truncate notifications are enabled.
 #: addon\globalPlugins\customNotifications\__init__.py:84
 msgid "Truncate notifications enabled"
-msgstr "Benachrichtigungen abschneiden eingeschaltet"
+msgstr "Agahiyên kurtkirî çalak in"
 
 #. Translators: message presented in input mode.
 #: addon\globalPlugins\customNotifications\__init__.py:88
 #, python-format
 msgid "Toggles speech option of %s."
-msgstr "Schaltet die Option für die Sprachausgabe von %s um."
+msgstr "Vebijarka axaftinê ya %s vediguherîne/diguhezîne."
 
 #. Translators: message presented when customNotifications speech is disabled.
 #: addon\globalPlugins\customNotifications\__init__.py:96
 #, python-format
 msgid "Speech disabled for %s"
-msgstr "Sprachausgabe für %s ausgeschaltet"
+msgstr "Axaftin ji bo %s hatiye astengkirin"
 
 #. Translators: message presented when customNotifications speech is enabled.
 #: addon\globalPlugins\customNotifications\__init__.py:100
 #, python-format
 msgid "Speech enabled for %s"
-msgstr "Sprachausgabe für %s eingeschaltet"
+msgstr "Axaftin ji bo %s çalak e"
 
 #. Translators: message presented in input mode.
 #: addon\globalPlugins\customNotifications\__init__.py:104
 #, python-format
 msgid "Toggles braille option of %s."
-msgstr "Schaltet die Option für die Brailleausgabe von %s um."
+msgstr "Vebijarka braille ya %s vediguherîne/diguhezîne."
 
 #. Translators: message presented when customNotifications braille is disabled.
 #: addon\globalPlugins\customNotifications\__init__.py:112
 #, python-format
 msgid "Braille disabled for %s"
-msgstr "Brailleausgabe für %s ausgeschaltet"
+msgstr "Braille ji bo %s neçalak e"
 
 #. Translators: message presented when customNotifications braille is enabled.
 #: addon\globalPlugins\customNotifications\__init__.py:116
 #, python-format
 msgid "Braille enabled for %s"
-msgstr "Brailleausgabe für %s eingeschaltet"
+msgstr "Braille ji bo %s çalak e"
 
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
 #: buildVars.py:20
 msgid "Custom Notifications"
-msgstr "Benutzerdefinierte Benachrichtigungen"
+msgstr "Agahdariyên Taybet"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
@@ -128,13 +128,13 @@ msgstr "Benutzerdefinierte Benachrichtigungen"
 msgid "Choose how NVDA should read toast notifications.\n"
 "You can read just the application which sent a toast, and choose if notifications are spoken, displayed in braille or both.\n"
 "This may  improve your experience with toast notifications and help you to keep your privacy."
-msgstr "Wählen Sie aus, wie NVDA die Toast-Benachrichtigungen anzeigen soll.\n"
-"Sie können nur die Anwendung hören, die eine Toast-Benachrichtigung gesendet hat und wählen Sie aus, ob die Benachrichtigungen über die Sprachausgabe oder auf der Braillezeile ausgegeben oder beides angezeigt werden soll.\n"
-"Dies kann die Erfahrung mit Toast-Benachrichtigungen verbessern und helfen, die Privatsphäre zu wahren."
+msgstr "Hilbijêre ka NVDA çawa agahdariyên toastê bixwîne.\n"
+"Hûn dikarin tenê sepana ku toast şandiye bixwînin û hilbijêrin ka agahdarî werin gotin, bi braille werin nîşandan an jî herduyan.\n"
+"Ev dibe ku ezmûna we bi agahdariyên toastê re baştir bike û ji we re bibe alîkar ku hûn nepeniya xwe biparêzin."
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:28
 msgid "* Updates to translations."
-msgstr ""
+msgstr "* Nûvekirinên wergeran."
 
