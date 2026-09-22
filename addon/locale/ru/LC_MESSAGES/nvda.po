@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2026-09-01 01:27+0000\n"
-"PO-Revision-Date: 2026-09-01 11:48\n"
+"PO-Revision-Date: 2026-09-21 21:52\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -136,5 +136,5 @@ msgstr "Это дополнение позволяет выберать, как 
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:28
 msgid "* Updates to translations."
-msgstr ""
+msgstr "* Внесены изменения в переводы."
 
