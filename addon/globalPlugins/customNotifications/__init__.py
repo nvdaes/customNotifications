@@ -132,4 +132,6 @@ class EnhancedNotification(Notification):
 			speech.speakObject(self, reason=controlTypes.OutputReason.FOCUS)
 		# Ideally, we wouldn't use getPropertiesBraille directly.
 		if config.conf["customNotifications"]["braille"]:
-			braille.handler.message(braille.getPropertiesBraille(name=self.name, role=self.role))
+			braille.handler.message(
+				braille.regions.properties.getPropertiesBraille(name=self.name, role=self.role),
+			)
